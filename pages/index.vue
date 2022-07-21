@@ -34,6 +34,7 @@ export default {
         'AdBlockerUsage',
         'SurveyWebtech',
         'WhatIsTheSmallInternet',
+        'Wordcloud3',
         'SurveyParticipation',
         'Wordcloud',
         'SurveyMotivations',
@@ -49,7 +50,9 @@ export default {
         'GopherExample',
         'Gemini',
         'GeminiExample',
-        'TheCommunities'
+        'TheCommunities',
+        'Wordcloud4',
+        'ThankYou'
       ],
       page: 'Introduction'
     }
