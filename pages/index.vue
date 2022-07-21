@@ -25,12 +25,15 @@ export default {
     return {
       slides: [
         'Introduction',
+        'MCH2022',
+        'Overview',
         'StateOfTheWeb',
         'WhatIsTheSmallInternet',
         'HowDoesItWork',
         'TheProtocols',
         'Gopher',
         'Gemini',
+        'GeminiExample',
         'TheCommunities'
       ],
       page: 'Introduction'

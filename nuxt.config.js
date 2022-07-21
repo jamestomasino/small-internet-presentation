@@ -35,7 +35,9 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [ ],
+  plugins: [
+    { mode: 'client', src: '~/plugins/vimeo-player.js' }
+  ],
   /*
   ** Nuxt.js dev-modules
   */

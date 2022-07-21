@@ -7,6 +7,10 @@
   overflow: hidden;
   background-color: #000;
   color: #fff;
+
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .page {
@@ -19,5 +23,12 @@ img.full {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
