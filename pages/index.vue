@@ -42,6 +42,7 @@ export default {
         'HowDoesItWork',
         'TheProtocols',
         'Gopher',
+        'GopherExample',
         'Gemini',
         'GeminiExample',
         'TheCommunities'
