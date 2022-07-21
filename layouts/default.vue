@@ -1,8 +1,5 @@
 <template>
   <div>
-    <div id="skip">
-      <a class="skip-main" href="#main">Skip to main content</a>
-    </div>
     <nuxt
       id="main"
       ref="main"

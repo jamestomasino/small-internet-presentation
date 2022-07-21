@@ -85,5 +85,8 @@ export default {
     extend (config, ctx) {
     }
   },
-  components: true
+  components: true,
+  generate: {
+    fallback: true
+  }
 }
