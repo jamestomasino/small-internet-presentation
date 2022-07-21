@@ -36,6 +36,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { mode: 'client', src: '~/plugins/vue-fullscreen.js' },
     { mode: 'client', src: '~/plugins/vimeo-player.js' }
   ],
   /*

@@ -7,13 +7,16 @@
       @keyup.right="next"
       @keyup.space="next"
       @keyup.left="prev"
+      @keyup.enter="toggle"
     >
-      <div
-        v-for="slideName in slides"
-        :key="slideName"
-      >
-        <component :is="slideName" v-if="page === slideName" class="page" />
-      </div>
+      <fullscreen v-model="fullscreen">
+        <div
+          v-for="slideName in slides"
+          :key="slideName"
+        >
+          <component :is="slideName" v-if="page === slideName" class="page" />
+        </div>
+      </fullscreen>
     </section>
   </div>
 </template>
@@ -23,6 +26,7 @@ export default {
   name: 'Home',
   data () {
     return {
+      fullscreen: false,
       slides: [
         'Introduction',
         'MCH2022',
@@ -81,6 +85,12 @@ export default {
     this.focusInput()
   },
   methods: {
+    toggle () {
+      this.fullscreen = !this.fullscreen
+    },
+    toggleApi () {
+      this.$fullscreen.toggle()
+    },
     focusInput () {
       setTimeout(() => {
         this.$refs.slidesWrapper.focus()
