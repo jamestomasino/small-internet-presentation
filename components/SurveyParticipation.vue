@@ -1,5 +1,5 @@
 <template>
   <div>
-    <img class="full" src="~assets/images/survey-participation.png">
+    <img class="fit" src="~assets/images/survey-participation.png">
   </div>
 </template>

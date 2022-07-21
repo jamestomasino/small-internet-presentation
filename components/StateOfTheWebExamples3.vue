@@ -4,11 +4,3 @@
     <img src="~assets/images/stateofweb-data-collected.webp">
   </div>
 </template>
-
-<style lang="scss">
-.mch2022 {
-  .copyblock {
-    padding: 50px;
-  }
-}
-</style>

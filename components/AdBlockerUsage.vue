@@ -1,5 +1,5 @@
 <template>
   <div>
-    <img class="full" src="~assets/images/ad-blocker-usage.png">
+    <img class="fit" src="~assets/images/ad-blocker-usage.png">
   </div>
 </template>

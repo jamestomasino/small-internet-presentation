@@ -1,5 +1,5 @@
 <template>
-  <div class="mch2022 center padding">
+  <div class="center padding">
     <p>
       The <span class="yellow">web is a mess</span>, bloated with
       data-gathering trackers, predatory UX, massive resource loads, and it

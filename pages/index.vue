@@ -41,6 +41,7 @@ export default {
         'Wordcloud2',
         'SurveyTime',
         'HowDoesItWork',
+        'SimpleWebsites',
         'TheProtocols',
         'Gopher',
         'Gopher1992A',
