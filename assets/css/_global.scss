@@ -7,10 +7,22 @@
   overflow: hidden;
   background-color: #000;
   color: #fff;
-
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-size: 36px;
-  line-height: 40px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 70px;
+  padding-bottom: 1em;
+}
+
+p {
+  font-size: 40px;
+  line-height: 50px;
+
+  &:not(:last-of-type) {
+    padding-bottom: 1em;
+  }
 }
 
 .page {
@@ -31,4 +43,17 @@ img.full {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &.horizontal {
+    flex-direction: row;
+  }
+
+  &.space {
+    justify-content: space-around;
+    align-items: space-around;
+  }
+}
+
+.padding {
+  padding: 100px;
 }

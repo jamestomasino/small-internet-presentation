@@ -1,9 +1,13 @@
 <template>
   <div class="overview center">
     <div class="copyblock">
+      <h1 class="yellow">
+        Topics
+      </h1>
       <p>The Small Internet</p>
       <p>The Technical Stuff</p>
       <p>The Sociological Stuff</p>
+      <p class="green">Q&amp;A - The Quarantine Arms</p>
     </div>
   </div>
 </template>
@@ -12,10 +16,6 @@
 .mch2022 {
   .copyblock {
     padding: 50px;
-
-    p:not(:last-of-type) {
-      padding-bottom: 2em;
-    }
   }
 }
 </style>

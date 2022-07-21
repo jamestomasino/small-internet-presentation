@@ -1,4 +1,27 @@
 :root {
 	--white: #FFFFFF;
 	--black: #000000;
+	--blue: #491d88;
+	--yellow: #fec859;
+	--green: #43b5a0;
+	--pink: #fa448c;
+}
+
+.white {
+	color: var(--white);
+}
+.black {
+	color: var(--black);
+}
+.blue {
+	color: var(--blue);
+}
+.yellow {
+	color: var(--yellow);
+}
+.green {
+	color: var(--green);
+}
+.pink {
+	color: var(--pink);
 }

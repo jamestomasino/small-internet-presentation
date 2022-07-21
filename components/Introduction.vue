@@ -1,5 +1,5 @@
 <template>
   <div>
-    <img class="full" src="~assets/images/rockin-the-web-bloat.png">
+    <img class="full" src="~assets/images/title-rockinthewebbloat.png">
   </div>
 </template>
