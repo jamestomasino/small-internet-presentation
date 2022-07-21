@@ -1,6 +1,8 @@
 
 export default {
   telemetry: false,
+  target: 'static',
+  ssr: false,
   /*
   ** Headers of the page
   */
@@ -50,7 +52,7 @@ export default {
     '@nuxtjs/redirect-module'
   ],
   sitemap: {
-    hostname: 'https://www.domain.com',
+    hostname: 'https://small-internet-presentation.netlify.app',
     gzip: true,
     trailingSlash: true,
     defaults: {
@@ -68,7 +70,7 @@ export default {
   },
   robots: {
     UserAgent: '*',
-    Sitemap: 'https://www.domain.com/sitemap.xml'
+    Sitemap: 'https://small-internet-presentation.netlify.app/sitemap.xml'
   },
   redirect: [
     { from: '^(\\/[^\\?]*[^\\/])(\\?.*)?$', to: '$1/$2', statusCode: 301 }
