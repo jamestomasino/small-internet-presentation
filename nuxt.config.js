@@ -33,14 +33,7 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    { mode: 'client', src: '~/plugins/focus-trap.js' },
-    { mode: 'client', src: '~/plugins/resize-frame.js' },
-    { mode: 'client', src: '~/plugins/scroll-frame.js' },
-    { mode: 'client', src: '~/plugins/modals.js' },
-    { mode: 'client', src: '~/plugins/exit-link.js' },
-    { mode: 'client', src: '~/plugins/vh.js' }
-  ],
+  plugins: [ ],
   /*
   ** Nuxt.js dev-modules
   */
