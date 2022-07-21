@@ -1,13 +1,41 @@
 <template>
   <div>
-    <h1>
-      Hello World!
-    </h1>
+    <section
+      ref="slidesWrapper"
+      tabindex="0"
+      class="slides"
+      @keyup.right="next"
+      @keyup.space="next"
+      @keyup.left="prev"
+    >
+      <div
+        v-for="slideName in slides"
+        :key="slideName"
+      >
+        <component :is="slideName" v-if="page === slideName" class="page" />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'Home',
+  data () {
+    return {
+      slides: [
+        'Introduction',
+        'StateOfTheWeb',
+        'WhatIsTheSmallInternet',
+        'HowDoesItWork',
+        'TheProtocols',
+        'Gopher',
+        'Gemini',
+        'TheCommunities'
+      ],
+      page: 'Introduction'
+    }
+  },
   head () {
     return {
       title: 'Small Internet Presentation',
@@ -26,9 +54,39 @@ export default {
         { hid: 'canonical', rel: 'canonical', href: 'https://small-internet-presentation.netlify.app' + this.$route.path }
       ]
     }
+  },
+  mounted () {
+    this.focusInput()
+  },
+  methods: {
+    focusInput () {
+      setTimeout(() => {
+        this.$refs.slidesWrapper.focus()
+      }, 200)
+    },
+    next () {
+      const index = this.slides.indexOf(this.page)
+      if (index < this.slides.length - 1) {
+        this.page = this.slides[index + 1]
+      }
+    },
+    prev () {
+      const index = this.slides.indexOf(this.page)
+      if (index > 0) {
+        this.page = this.slides[index - 1]
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
+.slides {
+  outline: 0px solid transparent;
+
+  &:active,
+  &:focus {
+    outline: 0px solid transparent;
+  }
+}
 </style>
