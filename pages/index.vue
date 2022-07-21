@@ -32,6 +32,8 @@ export default {
         'StateOfTheWebExamples2',
         'StateOfTheWebExamples3',
         'WhatIsTheSmallInternet',
+        'Wordcloud',
+        'Wordcloud2',
         'HowDoesItWork',
         'TheProtocols',
         'Gopher',
