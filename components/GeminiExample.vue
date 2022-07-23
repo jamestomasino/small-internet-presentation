@@ -2,14 +2,16 @@
   <div class="center">
     <client-only>
       <VideoPlayer
-        v-if="$hostname === 'localhost'"
+        v-if="$hostname() === 'localhost'"
         src="/video/gemini-explore.mp4"
         autoplay="true"
         loop="true"
         muted="true"
+        control-bar="{ false }"
+        tabindex="-1"
       />
       <vimeo-player
-        v-if="$hostname !== 'localhost'"
+        v-if="$hostname() !== 'localhost'"
         :options="{ loop: true }"
         video-url="732171575"
         muted="true"

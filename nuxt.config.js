@@ -37,6 +37,7 @@ export default {
   */
   plugins: [
     { mode: 'client', src: '~/plugins/vue-fullscreen.js' },
+    { mode: 'client', src: '~/plugins/hostname' },
     { mode: 'client', src: '~/plugins/vimeo-player.js' }
   ],
   /*
