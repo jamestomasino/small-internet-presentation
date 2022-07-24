@@ -14,6 +14,12 @@
         "Slow" - Intentional, personally meaningful, etc.
       </p>
       <p>
+        Purposefully limited
+      </p>
+      <p>
+        Participitory
+      </p>
+      <p>
         Non-tracking*
       </p>
       <p>
